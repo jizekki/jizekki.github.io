@@ -1,1 +1,0 @@
-# jizekki.github.io

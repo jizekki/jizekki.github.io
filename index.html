@@ -12,6 +12,23 @@
     <link rel="stylesheet" href="public/css/untitled.css">
 </head>
 
+<style>
+    .pulse-effect {
+        animation: pulse 1.5s infinite;
+        border-radius: 0%;
+    }
+
+    @keyframes pulse {
+        from {
+            box-shadow: 0 0 0 0 #519259;
+        }
+
+        to {
+            box-shadow: 0 0 0 10px rgba(255, 122, 0, 0);
+        }
+    }
+</style>
+
 <body id="page-top">
     <nav class="navbar navbar-light navbar-expand-lg fixed-top bg-secondary text-uppercase" id="mainNav">
         <div class="container"><a class="navbar-brand js-scroll-trigger" href="#page-top">Accueil</a><button
@@ -89,7 +106,7 @@
                                 <i class="fa fa-search-plus fa-3x"></i>
                             </div>
                         </div>
-                        <div class="myCard text-center">
+                        <div class="myCard text-center pulse-effect">
                             <div class="card-body">
                                 <h4 class="card-title title">Stage d'application</h4>
                                 <small class="text-uppercase text-secondary mb-0">juillet 2021 - septembre

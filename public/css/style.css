@@ -1,0 +1,17 @@
+.custom-card {
+  background-color: white;
+  padding: 15px;
+  border: 0px !important;
+  border-radius: 15px !important;
+  box-shadow: 0px 3px 6px -2px rgba(0, 0, 0, 0.1),
+    0px 4px 5px 0px rgba(0, 0, 0, 0.1), 0px 1px 10px 0px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  height: 250px;
+}
+
+.custom-card::after,
+:focus,
+:hover {
+  outline: none;
+  text-decoration: none !important;
+}

@@ -68,7 +68,29 @@
             <hr class="star-dark mb-5">
             <div class="row justify-content-center">
                 <div class="col-md-6 col-lg-4">
-                    <a class="d-block mx-auto portfolio-item" data-toggle="modal" href="#portfolio-modal-0">
+                    <a class="d-block mx-auto portfolio-item" role="button" data-toggle="modal" data-target="#modal_pfe">
+                        <div class="d-flex portfolio-item-caption position-absolute h-100 w-100"
+                            style="border-radius: 15px !important;">
+                            <div class="text-center text-white my-auto portfolio-item-caption-content w-100">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <div class="custom-card text-center">
+                            <div class="card-body">
+                                <h4 class="card-title title">Stage de fin d'études</h4>
+                                <small class="text-uppercase text-secondary mb-0">Fevrier 2022 - Juillet 2022
+                                </small>
+                                <hr>
+                                <p class="card-text">
+                                    Développement d'une application web permettant d'entraîner et déployer des
+                                    agents conversationnels.
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <a class="d-block mx-auto portfolio-item" data-toggle="modal" href="#modal_tf_certificate">
                         <div class="d-flex portfolio-item-caption position-absolute h-100 w-100"
                             style="border-radius: 15px !important;">
                             <div class="text-center text-white my-auto portfolio-item-caption-content w-100">
@@ -304,8 +326,108 @@
             class="text-center text-white d-block js-scroll-trigger rounded" href="#page-top"><i
                 class="fa fa-chevron-up"></i></a></div>
 
-    <!-- models -->
-    <div class="modal text-center" role="dialog" tabindex="-1" id="portfolio-modal-0">
+    <!-- modals -->
+    <div class="modal text-center" role="dialog" tabindex="-1" id="modal_pfe">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header"><button type="button" class="close" data-dismiss="modal"
+                        aria-label="Close"><span aria-hidden="true">×</span></button></div>
+                <div class="modal-body">
+                    <div class="container text-center">
+                        <div class="row">
+                            <div class="col-lg-8 mx-auto">
+                                <h2 class="text-uppercase text-secondary mb-0">Stage de fin d'études</h2>
+                                <hr class="star-dark mb-5">
+                                <img class="img-fluid mb-5" src="public/img/pfe_1.png", alt="Not available yet">
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col-lg-10 text-left mx-auto">
+                                <p>
+                                    Cette application comporte les services suivants:
+                                </p>
+                                <ul>
+                                    <li>Un service de collecte, modification et classification de données (CRUD).</li>
+                                    <li>Un service d'entraînement, évaluation et déploiement de modèles de machine learning / deep learning.</li>
+                                    <li>Un service de collecte, évaluation et validation des prédictions des agents conversationnels.</li>
+                                </ul>
+                                <p>
+                                    L'application a été réalisée avec:
+                                </p>
+                                <ul>
+                                    <li>Le framework Django (Python) pour le backend.</li>
+                                    <li>Django Rest Framework (DRF) pour la construction des APIs.</li>
+                                    <li>HTML, Javascript, Hyperscript, HTMX et Bootstrap pour le frontend.</li>
+                                    <li>Tensorflow, Scikit-learn, Spacy, NLTK et Pandas pour le flux de traitement du langage naturel (NLP).</li>
+                                    <li>Plotly pour la visualisation des données.</li>
+                                    <li>Huey et Redis pour l'exécution asynchrone des tâches.</li>
+                                    <li>RedisAI pour le déploiement des modèles Tensorflow entraînés.</li>
+                                    <li>PostgreSQL comme système de gestion de base de données.</li>
+                                    <li>Poetry pour la gestion des dépendances.</li>
+                                    <li>Docker, Dockerhub et Kubernetes (ks8) pour le déploiement en production.</li>
+                                    <li>Pre-commit et Megalinter pour assurer la qualité du code</li>
+                                    <li>Github pour la gestion du projet et Github actions pour la CI / CD.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-8 mx-auto">
+                                <span class="badge badge-dark">Tensorflow</span>
+                                <span class="badge badge-dark">Django / DRF</span>
+                                <span class="badge badge-dark">Scikit-learn</span>
+                                <span class="badge badge-dark">Redis / RedisAI</span>
+                                <span class="badge badge-dark">Docker</span>
+                                <span class="badge badge-dark">Spacy</span>
+                                <span class="badge badge-dark">NLTK</span>
+                                <span class="badge badge-dark">Poetry</span>
+                                <span class="badge badge-dark">PostgreSQL</span>
+                                <span class="badge badge-dark">Plotly</span>
+                                <span class="badge badge-dark">Javascript</span>
+                                <span class="badge badge-dark">Bootstrap</span>
+                                <span class="badge badge-dark">HTML / HTMX / Hyperscript</span>
+                                <hr class="border-top pb-3">
+                                <div class="text-center text-dark mb-2"><a class="btn btn-outline-dark btn-xl btn-block"
+                                        role="button" target="_blank" href="media/pfe-specifications.pdf"><i
+                                            class="fa fa-download mr-2"></i>
+                                        <span>Télécharger le document de spécifications</span>
+                                    </a>
+                                </div>
+                                <div class="text-center text-dark"><a class="btn btn-outline-dark btn-xl btn-block"
+                                        role="button" target="_blank" href="media/pfe-rapport-intermediaire.pdf"><i
+                                            class="fa fa-download mr-2"></i>
+                                        <span>Télécharger le rapport intermediaire</span>
+                                    </a>
+                                </div>
+                                <div class="text-center text-dark"><a class="btn btn-outline-dark btn-xl btn-block disabled"
+                                        role="button" target="_blank" href="#"><i
+                                            class="fa fa-download mr-2"></i>
+                                        <span>Télécharger le rapport final</span>
+                                        <small class="badge badge-warning">(Bientôt disponible)</small>
+                                    </a>
+                                </div>
+                                <div class="text-center text-dark"><a class="btn btn-outline-dark btn-xl btn-block disabled"
+                                        role="button" target="_blank" href="#"><i
+                                            class="fa fa-download mr-2"></i>
+                                        <span>Télécharger la présentation de soutencance</span>
+                                        <small class="badge badge-warning">(Bientôt disponible)</small>
+                                    </a>
+                                </div>
+                                <div class="text-center text-dark"><a class="btn btn-outline-dark btn-xl btn-block disabled"
+                                        role="button" target="_blank" href="#"><i
+                                            class="fa fa-download mr-2"></i>
+                                        <span>Télécharger le poster</span>
+                                        <small class="badge badge-warning">(Bientôt disponible)</small>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer pb-5"></div>
+            </div>
+        </div>
+    </div>
+    <div class="modal text-center" role="dialog" tabindex="-1" id="modal_tf_certificate">
         <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content">
                 <div class="modal-header"><button type="button" class="close" data-dismiss="modal"

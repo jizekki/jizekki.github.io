@@ -15,15 +15,3 @@
   outline: none;
   text-decoration: none !important;
 }
-
-li {
-  text-indent: -5px;
-}
-
-.custom-list > li{
-  list-style-type: none;
-}
-.custom-list > li:before {
-  content: '•';
-  margin-right: 3px;
-}
